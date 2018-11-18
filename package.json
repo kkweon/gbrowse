@@ -4,7 +4,19 @@
   "description": "Open GitHub in Browser",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
-  "repository": "git@github.com:kkweon/gbrowse.git",
+  "repository": "https://github.com/kkweon/gbrowse",
+  "homepage": "https://github.com/kkweon/gbrowse#readme",
+  "keywords": [
+    "github",
+    "git",
+    "utils",
+    "browse",
+    "open"
+  ],
+  "bugs": {
+    "url": "https://github.com/kkweon/gbrowse/issues",
+    "email": "kkweon@gmail.com"
+  },
   "author": "Mo Kweon",
   "license": "MIT",
   "private": false,
