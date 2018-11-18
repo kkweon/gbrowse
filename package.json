@@ -3,8 +3,52 @@
   "version": "1.0.0",
   "description": "Open GitHub in Browser",
   "main": "dist/index.js",
+  "types": "dist/index.d.js",
   "repository": "git@github.com:kkweon/gbrowse.git",
   "author": "Mo Kweon",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint --project .",
+    "format": "prettier --write \"*.{ts,js,json}\" \"src/**/*.{ts,js,json}\"",
+    "test": "yarn lint && tsc --noEmit && nyc mocha \"src/**/*.spec.ts\""
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "@types/open": "^0.0.29",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "prettier": "^1.15.2",
+    "source-map-support": "^0.5.9",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.16.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {
+    "nyc": "^13.1.0",
+    "open": "^0.0.5"
+  }
 }

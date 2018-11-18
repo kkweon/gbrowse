@@ -1,0 +1,2 @@
+const gbrowse = require('../dist')
+gbrowse.main()
