@@ -1,4 +1,5 @@
 #!/usr/bin/env node
 
 const gbrowse = require('../dist')
-gbrowse.main()
+const argv =  process.argv.slice(2)
+gbrowse.main(argv)

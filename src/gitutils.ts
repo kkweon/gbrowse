@@ -17,3 +17,8 @@ export async function getOriginUrl(): Promise<ExecOutput> {
   const cmd = "git config remote.origin.url"
   return execPromisified(cmd)
 }
+
+export async function getGitFilePath(filepath: string): Promise<ExecOutput> {
+  const cmd = `git ls-files --full-name ${filepath}`
+  return execPromisified(cmd)
+}

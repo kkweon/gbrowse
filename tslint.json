@@ -9,7 +9,13 @@
   "rules": {
     "only-arrow-functions": false,
     "no-unused-expression": false,
-    "interface-name": false
+    "interface-name": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore"
+    ]
   },
   "rulesDirectory": []
 }

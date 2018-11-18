@@ -12,6 +12,7 @@ Open your local GitHub file in the browser
 
 ```
 gbrowse # open current branch in GitHub
+gbrowse src/index.ts # open a file in the current branch
 ```
 
 
