@@ -4,6 +4,3 @@ useTabs: false
 semi: false
 singleQuote: false
 trailingComma: all
-bracketSpacing: true
-jsxBracketSameLine: false
-arrowParens: avoid

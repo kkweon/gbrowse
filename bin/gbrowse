@@ -1,5 +1,12 @@
 #!/usr/bin/env node
 
-const gbrowse = require('../dist')
-const argv =  process.argv.slice(2)
-gbrowse.main(argv)
+const gbrowse = require("../dist")
+const argv = process.argv.slice(2)
+gbrowse.main(argv).catch(err => {
+  const ERRORMESSAGE =
+    "The following command has failed. Maybe you didn't run the command in a git repository?"
+  console.error("=".repeat(ERRORMESSAGE.length + 2))
+  console.error(ERRORMESSAGE)
+  console.error("=".repeat(ERRORMESSAGE.length + 2))
+  console.error(err)
+})
