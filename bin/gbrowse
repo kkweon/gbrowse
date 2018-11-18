@@ -1,2 +1,4 @@
+#!/usr/bin/env node
+
 const gbrowse = require('../dist')
 gbrowse.main()
