@@ -26,6 +26,7 @@
     "lint": "tslint --project .",
     "format": "prettier --write \"*.{ts,js,json}\" \"src/**/*.{ts,js,json}\"",
     "test": "yarn lint && tsc --noEmit && nyc mocha \"src/**/*.spec.ts\"",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "prepare": "yarn build"
   },
   "nyc": {
@@ -53,6 +54,7 @@
     "@types/node": "^10.12.9",
     "@types/open": "^0.0.29",
     "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
     "mocha": "^5.2.0",
     "prettier": "^1.15.2",
     "source-map-support": "^0.5.9",

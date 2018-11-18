@@ -3,6 +3,7 @@ node_js:
   - "lts/*"
   - "10"
 
+after_success: yarn coverage
 
 deploy:
   provider: npm
