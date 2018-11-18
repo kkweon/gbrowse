@@ -20,6 +20,7 @@
   "author": "Mo Kweon",
   "license": "MIT",
   "private": false,
+  "bin": "./bin/gbrowse",
   "scripts": {
     "build": "tsc",
     "lint": "tslint --project .",
