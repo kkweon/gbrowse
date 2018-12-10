@@ -52,7 +52,7 @@
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.5",
     "@types/node": "^10.12.12",
-    "@types/open": "^0.0.29",
+    "@types/opn": "^5.1.0",
     "chai": "^4.2.0",
     "coveralls": "^3.0.2",
     "mocha": "^5.2.0",
@@ -66,6 +66,6 @@
   },
   "dependencies": {
     "nyc": "^13.1.0",
-    "open": "^0.0.5"
+    "opn": "^5.4.0"
   }
 }
