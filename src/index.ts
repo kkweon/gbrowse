@@ -1,4 +1,4 @@
-import open from "opn"
+import open from "open"
 import { getBranchName, getGitFilePath, getOriginUrl } from "./gitutils"
 import { convertToUrl } from "./parser"
 
