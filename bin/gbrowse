@@ -2,7 +2,9 @@
 
 const gbrowse = require("../dist")
 const argv = process.argv.slice(2)
-gbrowse.main(argv).catch(err => {
+gbrowse.main(argv).then(_ => {
+  process.exit(0);
+}).catch(err => {
   const ERRORMESSAGE =
     "The following command has failed. Maybe you didn't run the command in a git repository?"
   console.error("=".repeat(ERRORMESSAGE.length + 2))
