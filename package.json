@@ -1,6 +1,6 @@
 {
   "name": "gbrowse",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Open GitHub in Browser",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
