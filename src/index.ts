@@ -9,7 +9,7 @@ export async function main(files?: string[]) {
   if (originUrl.stderr === "" && branchName.stderr === "") {
     if (files && files.length) {
       const filepathList = await Promise.all(files.map(getGitFilePath))
-      return filepathList.forEach(fp =>
+      return filepathList.map(fp =>
         open(
           convertToUrl(
             originUrl.stdout.trim(),
@@ -20,6 +20,8 @@ export async function main(files?: string[]) {
       )
     }
 
-    open(convertToUrl(originUrl.stdout.trim(), branchName.stdout.trim()))
+    return open(convertToUrl(originUrl.stdout.trim(), branchName.stdout.trim()))
   }
+
+  throw new Error(`${originUrl.stderr}\n${branchName.stderr}`)
 }
