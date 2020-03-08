@@ -1,9 +1,12 @@
 {
   "name": "gbrowse",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Open GitHub in Browser",
   "main": "dist/index.js",
-  "types": "dist/index.d.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "*"
+  ],
   "repository": "https://github.com/kkweon/gbrowse",
   "homepage": "https://github.com/kkweon/gbrowse#readme",
   "keywords": [
